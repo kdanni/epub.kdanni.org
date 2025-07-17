@@ -1,3 +1,7 @@
+uploads/
+inputs/
+
+
 # Logs
 logs
 *.log

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPUB Reader</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>EPUB Reader</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Upload EPUB</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" id="epub-file" name="epub" accept=".epub" required />
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section id="library-section">
+            <h2>Your Library</h2>
+            <ul id="epub-list"></ul>
+        </section>
+        <section id="reader-section" style="display:none;">
+            <h2 id="book-title"></h2>
+            <div id="book-metadata"></div>
+            <nav id="chapter-nav"></nav>
+            <article id="chapter-content"></article>
+        </section>
+    </main>
+    <script src="/main.js"></script>
+</body>
+</html>
